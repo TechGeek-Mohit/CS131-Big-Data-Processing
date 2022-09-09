@@ -1,0 +1,27 @@
+ 332  $ wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  333  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  334  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  335  ls -latr
+  336  head -n 2 amazon_reviews_us_Books_v1_02.tsv.gz
+  337  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  338  ls -lat
+  339  head -n 2 amazon_reviews_us_Books_v1_02.tsv.gz
+  340  head -n 2 amazon_reviews_us_Books_v1_02.tsv
+  341  grep 'Y\s\+Y\s\+' amazon_reviews_us_Books_v1_02.tsv
+  342  grep 'Y\s\+Y\s\+' amazon_reviews_us_Books_v1_02.tsv | wc
+  343  grep 'N\s\+N\s\+' amazon_reviews_us_Books_v1_02.tsv | wc
+  344  grep 'Y\s\+N\s\+' amazon_reviews_us_Books_v1_02.tsv | wc
+  345  grep 'N\s\+Y\s\+' amazon_reviews_us_Books_v1_02.tsv | wc
+  346  grep 'Y\s\+Y\s\+' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+  347  grep 'Y\s\+N\s\+' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+  348  grep 'N\s\+N\s\+' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+  349  grep 'N\s\+Y\s\+' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+  350  cat counts.txt
+  351  vi counts.txt
+  352  grep 'Y\s\+Y\s\+' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+  353  grep 'N\s\+N\s\+' amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt
+  354  grep 'Y\s\+N\s\+' amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt
+  355  grep 'N\s\+Y\s\+' amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt
+  356  cat counts.txt
+  357  vi counts.txt
+  358  history  > cmds.log
