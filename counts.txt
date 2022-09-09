@@ -1,0 +1,8 @@
+1st Verification : Yes 2nd Verification: Yes
+      lines:3     words:583    chars:3403
+1st Verification : No 2nd Verification: No
+      lines:2876173 words:505766304 chars:2976270807
+ 1st Verification : Yes, 2nd Verification: No
+      lines:6    words:2114   chars:12295
+1st Verification : No, 2nd Verification: Yes
+      lines:2119516 words:44436005 chars:262632858
