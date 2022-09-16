@@ -1,0 +1,91 @@
+Script started on 2022-09-16 19:33:56-04:00
+^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ ls
+amazon_reviews_us_Books_v1_02.tsv  wsk3.txt
+
+#checking the customer id and product id location in the first $^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ ls^H^Hrm wsk3.txt ^H^H^H^H^H$marketplace     customer_id     review_id       product_id     $US      12076615        RQ58W7SMO911M   0385730586      1226629$#putting the customer_id is seperate text file customer_id.txt
+
+^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ head -n 2 amazon_reviews_us_$^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ cut -f 2 amazon_reviews_us_B$^[[?2004h^[[?1049h^[[22;0;0t^[[?1h^[=^[[?2004h^[[1;34r^[[?12h^[$#Checked the customer_id.txt using Vi
+12076615
+12703090
+12257412
+50732546
+51964897
+31048862
+53000124
+29732693
+48541186
+15280864
+24209213
+52253037
+27925116
+15005044
+52534781
+26217071
+37684582
+45232107
+15437121
+52157117
+50732546
+15865974
+13503149
+51917717
+12070100
+14808839
+30675785
+31863302
+12068874
+12073911
+53043498
+12360098^[[34;116H1,1^[[11CTop^[[1;1H^[[?25h^[[?12$p^[[?25l^[[34;106Hq^[[1;1H^[[?25h^[[?25l^[[34;107H~@k^[[1;1H^G^[[34;106H    ^[[1;$
+
+#Found top 3 customer_id who did most product ratings.
+
+2664 52615377
+9964 50732546
+21922 50122160
+^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ sort customer_id.txt | uniq $#added product id to product_id.txt from Amazon data set and ch$^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ vi product_id.txt
+
+#added product id to product_id.txt from Amazon data set and ch$^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ vi product_id.txt
+
+^[[?2004h^[[?1049h^[[22;0;0t^[[?1h^[=^[[?2004h^[[1;34r^[[?12h^[$0385730586
+0811828964
+1844161560
+0373836635
+0262181533
+0316769487
+0805076069
+1581603681
+0300108834
+0446531081
+0976822105
+1580085695
+0029148510
+1592285570
+0811848833
+0782144276
+0375757996
+013146308X
+0375701907
+141378240X
+045121692X
+0814470734
+1585424307
+0385324162
+0471485853
+1558746250
+0375826688
+0373484372
+0060727799
+0060839880
+0971525331
+0374281580^[[34;116H1,1^[[11CTop^[[1;1H^[[?25h^[[?12$p^[[?25l^[$^[[?2004l^[[?1l^[>^[[?25h^[[?1049l^[[23;0;0t^[]0;mohit@sjsu:~^G$sort: option requires an argument -- 'k'
+Try 'sort --help' for more information.
+
+#Top 3 products with most reviews
+
+^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ sort product_id.txt | uniq -$   
+ 2666 0525947647
+ 3739 0439139597
+ 4625 043935806X
+^[]0;mohit@sjsu:~^G[mohit@sjsu ~]$ exit
+Script done on 2022-09-16 19:40:19-04:00
