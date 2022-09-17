@@ -1,0 +1,14 @@
+ls
+cut -f 2 amazon_reviews_us_Books_v1_02.tsv
+cut -f 2 amazon_reviews_us_Books_v1_02.tsv > customer_id.txt
+vi customer_id.txt
+sort customer_id.txt | uniq - c | sort -n
+sort customer_id.txt | uniq - c | sort -n -k 1
+sort customer_id.txt | uniq -c
+sort customer_id.txt | uniq -c | sort -n
+sort customer_id.txt | uniq -c | sort -n | tail -3
+head -n2 amazon_reviews_us_Books_v1_02.tsv
+cut -f 4 amazon_reviews_us_Books_v1_02.tsv > product_id.txt
+vi product_id.txt
+sort product_id.txt | uniq -c | sort -nr -k2
+"~/.bash_history"
